@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link
+    rel="icon"
+    href="https://avatars.mds.yandex.net/i?id=e0b2a6e5b6f3d5198b4053f817298986_sr-5735191-images-thumbs&n=13"
+    type="image/x-icon"
+  />
+  <!-- <link rel="stylesheet" href="/styles.css" /> -->
+  <title>JS Studies</title>
+  <script src="calendar.js" defer></script>
+
+  <style>
+    body {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      height: calc(95vh);
+
+      font-size: 30px;
+      font-weight: 100;
+
+      flex-direction: column;
+      /* align-items: baseline; */
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 70vh;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    caption {
+      margin-bottom: 10px;
+    }
+    td,
+    th {
+      border: 1px solid black;
+      padding: 3px;
+      text-align: center;
+    }
+
+    th {
+      font-weight: bold;
+      background-color: #e6e6e6;
+    }
+
+    #calendarElement {
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      padding: 10px 15px;
+      box-sizing: border-box;
+      border: 1px solid gray;
+      background-color: rgba(207, 235, 245, 0.596);
+      font: inherit;
+    }
+    button:hover {
+      box-shadow: 5px 10px 10px 5px rgba(167, 159, 236, 0.3);
+    }
+
+    button:active {
+      scale: 90%;
+      box-shadow: 5px 10px 10px 1px rgba(167, 159, 236, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div id="calendarElement"></div>
+    <div class="buttons">
+      <button id="monthChangePrevious">&lAarr;</button>
+      <button id="checkDay">Cегодня</button>
+      <button id="monthChangeNext">&rAarr;</button>
+    </div>
+  </div>
+
+</body>
+</html>
